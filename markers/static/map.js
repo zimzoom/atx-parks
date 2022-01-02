@@ -5,7 +5,7 @@ const map = L.map("map", { layers: [osm], minZoom: 5 });
 map.
   locate()
   .on("locationfound", (e) => map.setView(e.latlng, 8))
-  .on("locationerror", () => map.setView([0, 0], 5));
+  .on("locationerror", () => map.setView([30.26666, -97.73333], 10));
 // map.fitWorld();
 
 async function load_markers() {
