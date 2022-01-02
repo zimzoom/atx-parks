@@ -5,7 +5,7 @@ from rest_framework_gis import filters
 from markers.models import Marker
 from markers.serializers import MarkerSerializer
 
-class MarkerViewSet(viewsets.ReadOnlyModelVIewSet):
+class MarkerViewSet(viewsets.ReadOnlyModelViewSet):
 	"""Marker view set."""
 
 	bbox_filter_field = "location"
