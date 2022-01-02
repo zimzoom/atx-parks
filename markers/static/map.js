@@ -6,7 +6,6 @@ map.
   locate()
   .on("locationfound", (e) => map.setView(e.latlng, 8))
   .on("locationerror", () => map.setView([30.26666, -97.73333], 10));
-// map.fitWorld();
 
 async function load_markers() {
   const markers_url = `/api/markers/?in_bbox=${map.getBounds().toBBoxString()}`
